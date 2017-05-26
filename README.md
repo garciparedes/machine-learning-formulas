@@ -1,10 +1,8 @@
-# machine-learning-formulas
+# Machine Learning Formulas
 
 ## Description
 
-This project pretends to be a survey about Machine Learning algorithms focused math definitions.
-
-
+This project pretends to be a survey about Machine Learning algorithms focusing on math definitions.
 
 ## Contents
 - [Document](document.pdf)
