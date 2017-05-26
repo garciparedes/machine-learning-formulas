@@ -19,12 +19,12 @@ This project pretends to be a survey about Machine Learning algorithms focusing 
 5. Submit a pull request 🙂
 
 ### TODO
-  - Introduction #1
-  - Supervised Learning #8
-  - Decision Trees #2
-  - Rule Based Systems #3
-  - Instance Based Learning #4
-  - Bayes Learning #5
-  - Linear Classifiers #6
-  - Neural Networks #7
-  - Unsupervised Leaning #9
+  - Introduction [#1]
+  - Supervised Learning [#8]
+  - Decision Trees [#2]
+  - Rule Based Systems [#3]
+  - Instance Based Learning [#4]
+  - Bayes Learning [#5]
+  - Linear Classifiers [#6]
+  - Neural Networks [#7]
+  - Unsupervised Leaning [#9]
