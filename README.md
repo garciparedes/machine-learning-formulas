@@ -19,12 +19,12 @@ This project pretends to be a survey about Machine Learning algorithms focusing 
 5. Submit a pull request 🙂
 
 ### TODO
-  - Introduction [#1]
-  - Supervised Learning [#8]
-  - Decision Trees [#2]
-  - Rule Based Systems [#3]
-  - Instance Based Learning [#4]
-  - Bayes Learning [#5]
-  - Linear Classifiers [#6]
-  - Neural Networks [#7]
-  - Unsupervised Leaning [#9]
+  - Introduction [#1](https://github.com/garciparedes/machine-learning-formulas/issues/1)
+  - Supervised Learning [#8](https://github.com/garciparedes/machine-learning-formulas/issues/8)
+  - Decision Trees [#2](https://github.com/garciparedes/machine-learning-formulas/issues/2)
+  - Rule Based Systems [#3](https://github.com/garciparedes/machine-learning-formulas/issues/3)
+  - Instance Based Learning [#4](https://github.com/garciparedes/machine-learning-formulas/issues/4)
+  - Bayes Learning [#5](https://github.com/garciparedes/machine-learning-formulas/issues/5)
+  - Linear Classifiers [#6](https://github.com/garciparedes/machine-learning-formulas/issues/6)
+  - Neural Networks [#7](https://github.com/garciparedes/machine-learning-formulas/issues/7)
+  - Unsupervised Leaning [#9](https://github.com/garciparedes/machine-learning-formulas/issues/9)
