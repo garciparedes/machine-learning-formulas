@@ -1,5 +1,11 @@
 # machine-learning-formulas
 
+## Description
+
+This project pretends to be a survey about Machine Learning algorithms focused math definitions.
+
+
+
 ## Contents
 - [Document](document.pdf)
 
@@ -13,3 +19,12 @@
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request 🙂
+
+### TODO
+  - Introduction
+  - Decision Trees
+  - Rule Based Systems
+  - Instance Based Learning
+  - Bayes Learning
+  - Linear Classifiers
+  - Neural Networks
