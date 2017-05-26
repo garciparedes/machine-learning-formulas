@@ -1,4 +1,4 @@
-# machine-learning-formulas
+# Machine Learning Formulas
 
 ## Description
 
