@@ -4,8 +4,16 @@
 
 This project pretends to be a survey about Machine Learning algorithms focusing on math definitions.
 
-## Contents
-- [Document](document.pdf)
+## [Document](document.pdf)
+  - Introduction #1
+  - Supervised Learning #8
+  - Decision Trees #2
+  - Rule Based Systems #3
+  - Instance Based Learning #4
+  - Bayes Learning #5
+  - Linear Classifiers #6
+  - Neural Networks #7
+  - Unsupervised Leaning #9
 
 ## Authors
 - García Prado, Sergio ([@garciparedes](garciparedes.me))
@@ -17,14 +25,3 @@ This project pretends to be a survey about Machine Learning algorithms focusing 
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request 🙂
-
-### TODO
-  - Introduction #1
-  - Supervised Learning #8
-  - Decision Trees #2
-  - Rule Based Systems #3
-  - Instance Based Learning #4
-  - Bayes Learning #5
-  - Linear Classifiers #6
-  - Neural Networks #7
-  - Unsupervised Leaning #9
