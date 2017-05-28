@@ -249,10 +249,68 @@
 
 			\subsubsection{Support Vector Machines}
 			\label{sec:svm}
+			
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.4\textwidth]{svm-concept}
+					\caption{Support Vector Machine}
+					\label{fig:svm-concept}
+				\end{figure}
 
-				\paragraph{}
-				[TODO ]
-
+				\paragraph{Maximum margin intuition}
+					\begin{equation}
+						\begin{aligned}
+							w_0 + \boldsymbol{w^T x_{pos}} & = 1 \\
+							w_0 + \boldsymbol{w^T x_{neg}} & = -1
+						\end{aligned}
+						\Rightarrow \boldsymbol{w^T (x_{pos} - x_{neg})} = 2
+					\end{equation}
+					
+					\subparagraph{Length of weight vector}
+					
+					\begin{equation}
+						\|w\| = \sqrt{\sum_{j=1}^m w_j^2}
+					\end{equation}
+					
+					\subparagraph{Maximum margin intuition normalized}
+					
+					\begin{equation}
+						\frac{\boldsymbol{w^T (x_{pos}-x_{neg}})}{\|w\|} = \frac{2}{\|w\|}
+					\end{equation}
+				
+					\begin{equation}
+						y^{(i)}(w_0 + w^T x^{(i)}) \geq 1 \ \forall i
+					\end{equation}
+				
+				\paragraph{Objective function of SVM}
+				
+					\begin{equation}
+						\frac{1}{2}	\|w\|^2
+					\end{equation}
+				
+				\paragraph{Nonlinearly separable case using slack variables $\xi$}
+				
+					\begin{figure}
+						\centering
+						\includegraphics[width=0.4\textwidth]{svm-nonlinearly-parameter}
+						\caption{Efects of $\xi$ parameter over same dataset}
+						\label{fig:svm-nonlinearly-parameter}
+					\end{figure}
+				
+					\subparagraph{Linea constraints}
+					
+						\begin{equation}
+							\begin{aligned}
+								\boldsymbol{w^T x^{(i)}} \geq 1 - \xi^{(i)} &\mbox{ if }y^{(i)} = 1 \\
+								\boldsymbol{w^T x^{(i)}} \leq - 1 + \xi^{(i)} &\mbox{ if }y^{(i)} = -1
+							\end{aligned}
+						\end{equation}
+						
+					\subparagraph{Objective function of SVM}
+					
+						\begin{equation}
+							\frac{1}{2} \|w\|^2 + C \Bigg( \sum_i \xi^{(i)} \Bigg)
+						\end{equation}
 
 		\subsection{Neural Networks}
 		\label{sec:neural-networks}
