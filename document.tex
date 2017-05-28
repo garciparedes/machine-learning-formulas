@@ -343,6 +343,115 @@
 			\begin{equation}
 				x'_j = \frac{x_j - \mu_j}{\sigma_j}
 			\end{equation}
+			
+			\subsubsection{Logistic regression model}
+
+			\begin{figure}
+				\centering
+				\includegraphics[width=.4\textwidth]{logit-concept}
+				\caption{General concept of logistic regression model}
+				\label{fig:logit-concept}
+			\end{figure}
+			
+			\paragraph{\textit{logit} function}
+			
+			\begin{equation}
+				logit(p) = \log \frac{p}{(1-p)}
+			\end{equation}
+			
+			\subparagraph{\textit{logit} function according to class $y = 1$}
+			
+			\begin{equation}
+				logit(p(y=1|\boldsymbol{x}) = w_0 x_0 + w_1 x_1 + \dots + w_m x_m = \sum_{i=0}^m w_i x_i = \boldsymbol{w^T x}
+			\end{equation}
+			
+			\paragraph{Sigmoid function (activation function)}
+
+			\begin{figure}
+				\centering
+				\includegraphics[width=.4\textwidth]{sigmoid-function}
+				\caption{Sigmoid function}
+				\label{fig:sigmoid-function}
+			\end{figure}
+			
+			\begin{equation}
+				\phi(z) = \frac{1}{1+e^{-z}}
+			\end{equation}
+			
+			\paragraph{Quantizer (unit step function)}
+			
+			\begin{equation}
+				\begin{aligned}
+					\hat{y} &= \begin{cases} 1 &\mbox{if } \phi(z) \geq 0.5 \\ 0 &\mbox{otherwise} \end{cases} \\
+					\hat{y} &= \begin{cases} 1 &\mbox{if } z \geq 0.0 \\ 0 &\mbox{otherwise} \end{cases}
+				\end{aligned}
+			\end{equation}
+					
+			\paragraph{Likelihood $L$ function}
+			
+			\begin{equation}
+				L(w) = P(y| x; w) = \prod_{i=1}^n P(y^{(i)} | x^{(i)}; w) = \prod_{i=1}^n (\phi(z^{(i)}))^{y^{(i)}}(1-\phi(z^{(i)}))^{1-y^{(i)}}
+			\end{equation}
+			
+			\subparagraph{Log-likelihood function}
+			
+			\begin{equation}
+				l(w) = \log L(w) = \sum_{i=1}^n [y^{(i)}\log(\phi(z^{(i)}))+(1-y^{(i)})\log(1-\phi(z^{(i)}))]
+			\end{equation}
+			
+			\paragraph{Cost function}
+			
+			\begin{equation}
+				\begin{aligned}
+					J(w) &= \sum_{i=1}^n[-y^{(i)}\log(\phi(z^{(i)}))-(1-y^{(i)})\log(1-\phi(z^{(i)}))] \\
+					J(\phi(z), y; w) &= - y \log(\phi(z))-(1-y)\log(1-\phi(z))			
+				\end{aligned}
+			\end{equation}
+			
+			\subparagraph{Cost of classification}
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=.4\textwidth]{logit-cost-function-dia}
+				\caption{Cost of classification of sible-sample instance with logistic regression}
+				\label{fig:logit-cost-function-dia}
+			\end{figure}
+			
+			\begin{equation}
+				J(\phi(z), y; \boldsymbol{w}) = \begin{cases} -\log(\phi(z)) &\mbox{if} y=1 \\ -\log(1-\phi(z)) &\mbox{if} y=0 \end{cases}
+			\end{equation}
+			
+			\subparagraph{Result cost function}
+			
+			\begin{equation}
+				J(w) = - \sum_i y^{(i)} \log(\phi(z^{(i)})) + (1-y^{(i)}) \log(1-\phi(z^{(i)}))
+			\end{equation}
+			
+			\paragraph{Update of weight vector}
+			
+			\begin{equation}
+				\begin{aligned}
+					\boldsymbol{w} & \boldsymbol{:= w + \Delta w, \Delta w = - \mu \nabla J(w)} \\
+					w_j & := w_j + \mu \sum_{i=1}^n (y^{(i)} - \phi(z^{(i)}))x_j^{(i)}
+				\end{aligned}
+			\end{equation}
+			
+			\paragraph{L2 regularization}
+			
+			\begin{equation}
+				\frac{\lambda}{2} \| w\|^2 = \frac{\lambda}{2} \sum_{j=1}^m w_j^2
+			\end{equation}
+			
+			\subparagraph{$C$ inverse regularization parameter}
+			
+			\begin{equation}
+				C = \frac{1}{\lambda}
+			\end{equation}
+			
+			\subparagraph{Cost function with regularization}
+			\begin{equation}
+				J(w) = C \bigg[ \sum_{i=1}^n (-y^{(i)}\log(\phi(z^{(i)}))-(1-y^{(i)}))\log(1-\phi(z^{(i)})) \bigg] + \frac{1}{2} \|w\|^2
+			\end{equation}
 
 
 			\subsubsection{Single Layer Neural Networks}
