@@ -216,13 +216,13 @@
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=.1]{perceptron-concept}
+				\includegraphics[width=.4\textwidth]{perceptron-concept}
 				\caption{General concept of perceptron}
 				\label{fig:perceptron-concept}
 			\end{figure}
 
 			\paragraph{Perceptron's structures}
-			\begin{equation*}
+			\begin{equation}
 				w = \begin{bmatrix}
 						w_1 \\
 						\vdots \\
@@ -233,42 +233,42 @@
 						\vdots \\
 						x_m
 					\end{bmatrix}
-			\end{equation*}
+			\end{equation}
 
 			\paragraph{Ouput equation}
-			\begin{equation*}
+			\begin{equation}
 				z = w_1 x_1 + \dots + w_m x_m = \boldsymbol{w^T x}
-			\end{equation*}
+			\end{equation}
 
 
 			\paragraph{Activation function}
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=.25]{activation-function}
+				\includegraphics[width=.4\textwidth]{activation-function}
 				\caption{Activation function}
 				\label{fig:activation-function}
 			\end{figure}
 
-			\begin{equation*}
+			\begin{equation}
 				\phi(z) = \begin{cases}
 					1 &\mbox{if } z \geq \theta \\
 					-1 &\mbox{otherwise}
 				\end{cases}
-			\end{equation*}
+			\end{equation}
 
 			\paragraph{Update of weight vector}
 
-			\begin{align*}
+			\begin{align}
 					w_j &:= w_j + \Delta w_j \\
 					\Delta w_j &= \eta(y^{(i)} - \hat{y}^{(i)}) x^{(i)}_j
-			\end{align*}
+			\end{align}
 
 			\subsubsection{Adaptive linear neurons (ADALINE)}
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=.1]{adaline-concept}
+				\includegraphics[width=.4\textwidth]{adaline-concept}
 				\caption{General concept of adaline perceptron}
 				\label{fig:adaline-concept}
 			\end{figure}
@@ -277,27 +277,27 @@
 
 			\begin{figure}
 				\centering
-				\includegraphics[scale=.1]{gradient-descend}
+				\includegraphics[width=.4\textwidth]{gradient-descend}
 				\caption{Gradient descent}
 				\label{fig:gradient-descend}
 			\end{figure}
 
-			\begin{equation*}
+			\begin{equation}
 				J(w) = \frac{1}{2} \sum_i (y^{(i)}-\phi(z^{(i)}))^2
-			\end{equation*}
+			\end{equation}
 
 			\paragraph{Update of weight vector}
 
-			\begin{align*}
+			\begin{align}
 					w_j &:= w_j + \Delta w_j \\
 					\Delta w_j &= -\eta\nabla J(w) = \eta\sum_i (y^{(i)} -\phi(z^{(i)}))x^{(i)}_j
-			\end{align*}
+			\end{align}
 
 			\paragraph{Features standarization}
 
-			\begin{equation*}
+			\begin{equation}
 				x'_j = \frac{x_j - \mu_j}{\sigma_j}
-			\end{equation*}
+			\end{equation}
 
 
 			\subsubsection{Single Layer Neural Networks}
