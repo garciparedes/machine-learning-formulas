@@ -134,6 +134,9 @@
 				\paragraph{}
 				ID3 algorithm builds a tree selecting the attribute who maximizes $Gain()$ function respecto de the feature's attribute. It only works with nominal data and removes the attributes that have already been used. When there is no more attributes to select, it label the branch with the feature of the remainder instances.
 
+				\paragraph{}
+				The algorithm uses the bias concept refered as the a-priori intuitions used to learn concepts. The \textbf{inductive bias} used by \emph{ID3} is divided in two parts: the \emph{representational bias} who is related with de hypotesis space (logic functions), and the \emph{preference bias} who is based in the idea that the important caracteristics will be placed at the top of the tree (because of the $Gain()$ heuristic and the Breadth-first search) that has as consequence the tendency of generate low level trees.
+
 			\subsubsection{C4.5}
 			\label{sec:c45-trees}
 
