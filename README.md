@@ -17,6 +17,7 @@ This project pretends to be a survey about Machine Learning algorithms focusing 
 
 ## Authors
 - García Prado, Sergio ([@garciparedes](garciparedes.me))
+- Taboada Rodero, Ismael José ([@ismtabo](https://github.com/ismtabo))
 
 ## Contributing
 
